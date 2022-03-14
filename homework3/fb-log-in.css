@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+}
+
+
+.container{
+    display: grid;
+    
+    width: 100%;
+    height: auto;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.125rem;
+}
+
+.facebook{
+    margin-top: 10.938rem;
+
+    
+}
+
+.facebook img{
+    width: 18.816rem;
+    margin-left: -2rem;
+}
+
+@font-face {
+    font-family: SFProDisplay-Regular;
+    src: url('./FontsFree-Net-SFProDisplay-Regular.ttf');
+    /* SFProText-Regular */
+
+}
+
+.facebook h2{
+    font-family: SFProDisplay-Regular, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: normal;
+    padding: 0 0 1.25rem;
+    width: 31.25rem;
+}
+
+.signup-section{
+    width: 24.75rem;
+    height: 28.5rem;
+    
+}
+
+.signup-form{
+    position: relative;
+}
+
+
+.signup-form form{
+    margin-top: 7.563rem;
+    margin-left: 1.25rem;
+    width: 24.75rem;
+    height: 22.099rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.signup-form form input{
+    width: 22.75rem;
+    height: 3.25rem;
+    padding: 0.875rem 1rem;
+    margin:0.625rem auto;
+    background-color: #fff;
+    border: 0.063rem solid #dddfe2;
+    border-radius: 0.375rem;
+}
+
+.signup-form form input:focus{
+    background-color: rgb(252, 249, 249);
+    border: 0.063rem solid #dddfe2;
+}
+
+.signup-form form #button{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-stretch: 100%;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-form form input::-webkit-input-placeholder{
+    font-size: 1.188rem;
+    color: rgb(156, 160, 163);
+    line-height: 1;
+}
+
+
+.signup-form form a{
+    color: #1877f2;
+    margin-top: 0.9rem;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+
+
+.signup-form form .line{
+    align-items: center;
+    border-bottom: 0.063rem solid #dadde1;
+    display: flex;
+    text-align: center;
+    margin: 1.25rem 1rem;
+    width: 22.75rem;
+}
+
+
+.signup-form form #new-account{
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1.188rem;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 9.703rem;
+    height: 3rem;
+    background-color: #42b72a;
+    color: #fff;
+    margin-top:0 ;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: SFProText-Regular;
+    src: url('./FontsFree-Net-SFProText-Regular.ttf');
+    /* SFProText-Regular */
+
+}
+@font-face {
+    font-family: SFProText-Semibold;
+    src: url('./FontsFree-Net-SFProText-Semibold.ttf');
+    /* SFProText-Regular */
+
+}
+
+
+.signup-section .description span{
+    display: inline-block;
+    width: 24.75rem;
+    height: 1.34rem;
+    text-align: center;
+    margin: 1.75rem 0 0;
+    font-family: SFProText-Regular;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.signup-section .description a{
+    font-family: SFProText-Semibold;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(28, 30, 33);
+    text-decoration: none;
+}
+
+/* resposive website for tablet */
+@media (max-width:1075px) {
+    /* header and navigation bar */
+    .facebook{
+        margin-left: 40px;
+    }
+    .content-grid .facebook h2{
+        font-size: 1.625rem;
+        line-height: 1;
+        width: auto;
+    }
+
+
+}
+
+/* resposive website for mobile */
+@media (max-width:900px) {
+    /* header and navigation bar */
+    
+    .content-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .content-grid .facebook{
+        text-align: center;
+        width: 25rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .content-grid .facebook h2{
+        font-size: 1.625rem;
+        line-height: 1;
+        width: auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .signup-form form{
+        margin-top: 0;
+    }
+
+    .facebook img{
+        width: 18.816rem;
+        margin-left: -0.5rem;
+    }
+
+
+
+
+}
